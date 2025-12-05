@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arithmetic Operators</title>
+  </head>
+  <body>
+    <h1>Arithmetic Operators</h1>
+    <p id="q1">
+      Write a program that adds two numbers: 12 and 8. <br />
+      <strong id="q1Result">00</strong>
+    </p>
+
+    <p id="q2">
+      Subtract 50 from 120. <br />
+      <strong id="q2Result">00</strong>
+    </p>
+
+    <p id="q3">
+      Multiply 7 by 9. <br />
+      <strong id="q3Result">00</strong>
+    </p>
+
+    <p id="q4">
+      Divide 100 by 4. <br />
+      <strong id="q4Result">00</strong>
+    </p>
+
+    <p id="q5">
+      Find the remainder when 17 is divided by 5. <br />
+      <strong id="q5Result">00</strong>
+    </p>
+
+    <p id="q6">
+      Calculate 3**4 (3 raised to the power 4). <br />
+      <strong id="q6Result">00</strong>
+    </p>
+
+    <p id="q7">
+      Mix operators: What is the result of 10 + 5 * 2? <br />
+      <strong id="q7Result">00</strong>
+    </p>
+
+    <p id="q8">
+      Mix operators: What is the result of (10 + 5) * 2? <br />
+      <strong id="q8Result">00</strong>
+    </p>
+
+    <p id="q9">
+      Find the average of numbers: 10, 20, 30. <br />
+      <strong id="q9Result">00</strong>
+    </p>
+
+    <p id="q10">
+      Convert Celsius to Fahrenheit using formula: F = C * 9/5 + 32 (use C =
+      25). <br />
+      <strong id="q10Result">00</strong>F
+    </p>
+
+    <script>
+      window.addEventListener("load", () => {
+        let qA = 12;
+        let qB = 8;
+
+        document.getElementById("q1Result").textContent = qA + qB;
+
+        let q2A = 120;
+        let q2B = 50;
+
+        document.getElementById("q2Result").textContent = q2A - q2B;
+
+        let q3A = 7;
+        let q3B = 9;
+
+        document.getElementById("q3Result").textContent = q3A * q3B;
+
+        let q4A = 100;
+        let q4B = 4;
+
+        document.getElementById("q4Result").textContent = q4A / q4B;
+
+        let q5A = 17;
+        let q5B = 5;
+
+        document.getElementById("q5Result").textContent = q5A % q5B;
+
+        let q6A = 3;
+        let q6B = 4;
+
+        document.getElementById("q6Result").textContent = q6A ** q6B;
+
+        // In JavaScript (and most programming languages) the multiplication operator * has higher precedence than the addition operator +. So the multiplication is done first
+        let q7A = 10;
+        let q7B = 5;
+        let q7C = 2;
+
+        document.getElementById("q7Result").textContent = q7A + q7B * q7C;
+
+        let q8A = 10;
+        let q8B = 5;
+        let q8C = 2;
+
+        document.getElementById("q8Result").textContent = (q8A + q8B) * q8C;
+
+        let q9A = 10;
+        let q9B = 20;
+        let q9C = 30;
+
+        document.getElementById("q9Result").textContent = (q9A + q9B + q9C) / 3;
+
+        let q10A = 25;
+        let q10B = 9 / 5;
+        let q10C = 32;
+
+        document.getElementById("q10Result").textContent = q10A * q10B + q10C;
+      });
+    </script>
+  </body>
+</html>
